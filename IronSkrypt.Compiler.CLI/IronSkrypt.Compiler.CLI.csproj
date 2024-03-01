@@ -10,6 +10,8 @@
 		<RootNamespace>IronSkrypt.Compiler.CLI</RootNamespace>
 
 		<Version>0.0.1</Version>
+		<Description>The Compiler of NiteSkrypt language in dotnet.</Description>
+		<Copyright>NiTiSon © 2024</Copyright>
 		
 		<AssemblyName>skrypt</AssemblyName> <!-- Change exe file to skrypt -->
 
