@@ -3,11 +3,29 @@
 	<PropertyGroup>
 		<OutputType>Exe</OutputType>
 		<TargetFramework>net8.0</TargetFramework>
-		<AssemblyName>skrypt</AssemblyName>
-		<Nullable>enable</Nullable>
 		
-		<PublishSingleFile>true</PublishSingleFile>
-		<SelfContained>true</SelfContained>
+		<Nullable>enable</Nullable>
+		<LangVersion>latest</LangVersion>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<RootNamespace>NiteSkrypt.Compiler.CLI</RootNamespace>
+
+		<Version>0.0.1</Version>
+		
+		<AssemblyName>skrypt</AssemblyName> <!-- Change exe file to skrypt -->
+
 	</PropertyGroup>
+
+	<PropertyGroup Condition="$(Configuration) == 'Release'">
+
+		<DebugType>embedded</DebugType> <!-- Move pdb file into .exe -->
+		<PublishSingleFile>true</PublishSingleFile> <!-- Move libraries into .exe -->
+		<SelfContained>true</SelfContained> <!-- Allows the user not to install dotnet, but increases the size of the output file -->
+		<Optimize>true</Optimize>
+
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\NiteSkrypt.Compiler\NiteSkrypt.Compiler.csproj" />
+	</ItemGroup>
 
 </Project>
