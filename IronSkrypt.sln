@@ -3,13 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NiteSkrypt.Runtime", "NiteSkrypt.Runtime\NiteSkrypt.Runtime.csproj", "{0C22885B-6A49-49BD-8314-0D339C229FB0}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NiteSkrypt.Compiler", "NiteSkrypt.Compiler\NiteSkrypt.Compiler.csproj", "{C0BD3355-4B2E-4411-A33B-24FAD60B860C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NiteSkrypt.Compiler.CLI", "NiteSkrypt.Compiler.CLI\NiteSkrypt.Compiler.CLI.csproj", "{31804FE7-2311-4201-88EA-A30D8BA651F6}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Files", "Files", "{1209C0C6-2B91-4D4D-8785-48FB38BF0410}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\build.yml = .github\workflows\build.yml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IronSkrypt.Compiler", "IronSkrypt.Compiler\IronSkrypt.Compiler.csproj", "{069A7DA4-482C-43BF-8601-21CDC661892E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IronSkrypt.Compiler.CLI", "IronSkrypt.Compiler.CLI\IronSkrypt.Compiler.CLI.csproj", "{4F8E4E6D-4DCE-49F3-9FA6-6A2B7BF1B977}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IronSkrypt.Runtime", "IronSkrypt.Runtime\IronSkrypt.Runtime.csproj", "{0DDE6E4C-BE4E-4855-915B-98F133259101}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,18 +20,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0C22885B-6A49-49BD-8314-0D339C229FB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0C22885B-6A49-49BD-8314-0D339C229FB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0C22885B-6A49-49BD-8314-0D339C229FB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0C22885B-6A49-49BD-8314-0D339C229FB0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C0BD3355-4B2E-4411-A33B-24FAD60B860C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C0BD3355-4B2E-4411-A33B-24FAD60B860C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C0BD3355-4B2E-4411-A33B-24FAD60B860C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C0BD3355-4B2E-4411-A33B-24FAD60B860C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{31804FE7-2311-4201-88EA-A30D8BA651F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{31804FE7-2311-4201-88EA-A30D8BA651F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{31804FE7-2311-4201-88EA-A30D8BA651F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{31804FE7-2311-4201-88EA-A30D8BA651F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{069A7DA4-482C-43BF-8601-21CDC661892E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{069A7DA4-482C-43BF-8601-21CDC661892E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{069A7DA4-482C-43BF-8601-21CDC661892E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{069A7DA4-482C-43BF-8601-21CDC661892E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F8E4E6D-4DCE-49F3-9FA6-6A2B7BF1B977}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F8E4E6D-4DCE-49F3-9FA6-6A2B7BF1B977}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F8E4E6D-4DCE-49F3-9FA6-6A2B7BF1B977}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F8E4E6D-4DCE-49F3-9FA6-6A2B7BF1B977}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DDE6E4C-BE4E-4855-915B-98F133259101}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DDE6E4C-BE4E-4855-915B-98F133259101}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DDE6E4C-BE4E-4855-915B-98F133259101}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DDE6E4C-BE4E-4855-915B-98F133259101}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

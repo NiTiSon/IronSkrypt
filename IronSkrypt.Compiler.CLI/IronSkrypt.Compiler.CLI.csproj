@@ -7,7 +7,7 @@
 		<Nullable>enable</Nullable>
 		<LangVersion>latest</LangVersion>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-		<RootNamespace>NiteSkrypt.Compiler.CLI</RootNamespace>
+		<RootNamespace>IronSkrypt.Compiler.CLI</RootNamespace>
 
 		<Version>0.0.1</Version>
 		
@@ -25,7 +25,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\NiteSkrypt.Compiler\NiteSkrypt.Compiler.csproj" />
+		<ProjectReference Include="..\IronSkrypt.Compiler\IronSkrypt.Compiler.csproj" />
+		<ProjectReference Include="..\IronSkrypt.Runtime\IronSkrypt.Runtime.csproj" />
 	</ItemGroup>
-
 </Project>
